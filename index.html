@@ -1275,6 +1275,90 @@ function pasangBab(id){
 /* Setiap bab ialah satu dunia: warna, ikon hentian dan satu ayat misi.
    Bab tanpa entri di sini memakai DUNIA_ASAS, jadi bab baharu tetap berfungsi. */
 var DUNIA={
+  b4b1:{warna:"#2E7D32",lembut:"#E3F1E4",gelap:"#1E5622",ikon:"\u{1F52C}",
+        hentian:["\u{1F52C}","\u{1F9EB}","\u{1F9EA}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Masuk makmal biologi: bidang biologi, peraturan makmal dan kaedah saintifik."},
+  b4b2:{warna:"#00796B",lembut:"#DDF1EE",gelap:"#00544A",ikon:"\u{1F9EB}",
+        hentian:["\u{1F9EB}","\u{1F52C}","\u{1F9EC}","\u{1F4CA}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Jelajah kota sel: organel, sel haiwan dan tumbuhan serta organisasi sel."},
+  b4b3:{warna:"#6A1B9A",lembut:"#EFE2F6",gelap:"#4A126C",ikon:"\u{1F6AA}",
+        hentian:["\u{1F4A7}","\u{1F9C2}","\u{1F954}","\u{1F4C9}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Rentasi gerbang membran: resapan, osmosis dan pengangkutan aktif."},
+  b4b4:{warna:"#AD5A00",lembut:"#F9E9D6",gelap:"#7A3F00",ikon:"\u{1F35E}",
+        hentian:["\u{1F9EA}","\u{1F35E}","\u{1F95A}","\u{1F9C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Kenali resipi kehidupan: air, karbohidrat, protein, lipid dan asid nukleik."},
+  b4b5:{warna:"#1565C0",lembut:"#DEEAF8",gelap:"#0E4686",ikon:"\u{1F9EA}",
+        hentian:["\u{2697}\u{FE0F}","\u{1F511}","\u{1F321}\u{FE0F}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Kuasai mangkin hayat: metabolisme, enzim dan faktor tindakannya."},
+  b4b6:{warna:"#C62828",lembut:"#F9E0E0",gelap:"#8A1C1C",ikon:"\u{1F9EC}",
+        hentian:["\u{1F9EC}","\u{2702}\u{FE0F}","\u{1F52C}","\u{1F4CA}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Bongkar rahsia pembahagian: mitosis, meiosis dan kepentingannya."},
+  b4b7:{warna:"#4E7D2A",lembut:"#E7F0DE",gelap:"#36581D",ikon:"\u{26A1}",
+        hentian:["\u{26A1}","\u{1FAC1}","\u{1F35E}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Hidupkan enjin tenaga: respirasi aerob, anaerob dan penapaian."},
+  b4b8:{warna:"#2E7D32",lembut:"#E3F1E4",gelap:"#1E5622",ikon:"\u{1FAC1}",
+        hentian:["\u{1FAC1}","\u{1F4A8}","\u{1F41F}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Ikut nafas kehidupan: sistem respirasi manusia dan haiwan."},
+  b4b9:{warna:"#00796B",lembut:"#DDF1EE",gelap:"#00544A",ikon:"\u{1F37D}\u{FE0F}",
+        hentian:["\u{1F37D}\u{FE0F}","\u{1F9B7}","\u{1F9EA}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Susuri laluan makanan: nutrisi seimbang dan sistem pencernaan."},
+  b4b10:{warna:"#6A1B9A",lembut:"#EFE2F6",gelap:"#4A126C",ikon:"\u{2764}\u{FE0F}",
+        hentian:["\u{2764}\u{FE0F}","\u{1FA78}","\u{1FAC0}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Belayar di sungai merah: jantung, darah dan sistem limfa."},
+  b4b11:{warna:"#AD5A00",lembut:"#F9E9D6",gelap:"#7A3F00",ikon:"\u{1F6E1}\u{FE0F}",
+        hentian:["\u{1F6E1}\u{FE0F}","\u{1F9A0}","\u{1F489}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Pertahankan benteng imun: pertahanan badan, antibodi dan vaksin."},
+  b4b12:{warna:"#1565C0",lembut:"#DEEAF8",gelap:"#0E4686",ikon:"\u{1F9E0}",
+        hentian:["\u{1F9E0}","\u{26A1}","\u{1F441}\u{FE0F}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Sambungkan rangkaian saraf: sistem saraf, hormon dan gerak balas."},
+  b4b13:{warna:"#C62828",lembut:"#F9E0E0",gelap:"#8A1C1C",ikon:"\u{2696}\u{FE0F}",
+        hentian:["\u{1F321}\u{FE0F}","\u{1F4A7}","\u{1FAD8}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Jadi penjaga keseimbangan: homeostasis dan sistem urinari."},
+  b4b14:{warna:"#4E7D2A",lembut:"#E7F0DE",gelap:"#36581D",ikon:"\u{1F9B4}",
+        hentian:["\u{1F9B4}","\u{1F4AA}","\u{1F41B}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Gerakkan tulang dan otot: sokongan dan pergerakan manusia dan haiwan."},
+  b4b15:{warna:"#2E7D32",lembut:"#E3F1E4",gelap:"#1E5622",ikon:"\u{1F476}",
+        hentian:["\u{1F95A}","\u{1F476}","\u{1F9EC}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Ikuti kitaran hayat: pembiakan seks, perkembangan dan pertumbuhan."},
+  b5b1:{warna:"#00796B",lembut:"#DDF1EE",gelap:"#00544A",ikon:"\u{1F331}",
+        hentian:["\u{1F331}","\u{1F33F}","\u{1F4CF}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Tumbuhkan akar: tisu tumbuhan, meristem dan lengkung pertumbuhan."},
+  b5b2:{warna:"#6A1B9A",lembut:"#EFE2F6",gelap:"#4A126C",ikon:"\u{1F343}",
+        hentian:["\u{1F343}","\u{1F6AA}","\u{1F9EA}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Kendalikan kilang hijau: struktur daun, stoma, transpirasi dan fotosintesis."},
+  b5b3:{warna:"#AD5A00",lembut:"#F9E9D6",gelap:"#7A3F00",ikon:"\u{1F33E}",
+        hentian:["\u{1F33E}","\u{1F33F}","\u{1F9EA}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Sediakan santapan hijau: makronutrien, mikronutrien dan nutrisi istimewa."},
+  b5b4:{warna:"#1565C0",lembut:"#DEEAF8",gelap:"#0E4686",ikon:"\u{1F4A7}",
+        hentian:["\u{1F4A7}","\u{1F333}","\u{1F48D}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Alirkan sungai hijau: xilem, floem, translokasi dan fitoremediasi."},
+  b5b5:{warna:"#C62828",lembut:"#F9E0E0",gelap:"#8A1C1C",ikon:"\u{1F33B}",
+        hentian:["\u{1F33B}","\u{1F9EA}","\u{1F33E}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Fahami gerak senyap: tropisme, nastik dan fitohormon."},
+  b5b6:{warna:"#4E7D2A",lembut:"#E7F0DE",gelap:"#36581D",ikon:"\u{1F33A}",
+        hentian:["\u{1F33A}","\u{1F41D}","\u{1F36F}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Rawat taman benih: bunga, persenyawaan ganda dua, biji dan buah."},
+  b5b7:{warna:"#2E7D32",lembut:"#E3F1E4",gelap:"#1E5622",ikon:"\u{1F335}",
+        hentian:["\u{1F335}","\u{1F30A}","\u{1F52C}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Hidup di mana-mana: adaptasi mesofit, hidrofit, halofit dan xerofit."},
+  b5b8:{warna:"#00796B",lembut:"#DDF1EE",gelap:"#00544A",ikon:"\u{1F98B}",
+        hentian:["\u{1F98B}","\u{1F511}","\u{1F9A0}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Terokai khazanah hidup: pengelasan, biodiversiti dan mikroorganisma."},
+  b5b9:{warna:"#6A1B9A",lembut:"#EFE2F6",gelap:"#4A126C",ikon:"\u{1F333}",
+        hentian:["\u{1F333}","\u{1F578}\u{FE0F}","\u{1F7E9}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Bina jaringan hayat: ekosistem, siratan makanan dan ekologi populasi."},
+  b5b10:{warna:"#AD5A00",lembut:"#F9E9D6",gelap:"#7A3F00",ikon:"\u{1F30F}",
+        hentian:["\u{1F30F}","\u{1F517}","\u{1F4A7}","\u{1F4C8}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Jaga bumi lestari: ancaman, pemuliharaan dan teknologi hijau."},
+  b5b11:{warna:"#1565C0",lembut:"#DEEAF8",gelap:"#0E4686",ikon:"\u{1F9EC}",
+        hentian:["\u{1F9EC}","\u{2797}","\u{1F9EA}","\u{1F441}\u{FE0F}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Warisi gen: kacukan monohibrid, dihibrid dan pewarisan manusia."},
+  b5b12:{warna:"#C62828",lembut:"#F9E0E0",gelap:"#8A1C1C",ikon:"\u{1F465}",
+        hentian:["\u{1F465}","\u{1F500}","\u{1F4CA}","\u{2622}\u{FE0F}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Raikan keunikan: variasi selanjar, tak selanjar dan mutasi."},
+  b5b13:{warna:"#4E7D2A",lembut:"#E7F0DE",gelap:"#36581D",ikon:"\u{1F52C}",
+        hentian:["\u{1F52C}","\u{1F489}","\u{1F575}\u{FE0F}","\u{1F33D}","\u{2696}\u{FE0F}","\u{1F4A1}"],
+        misi:"Rekayasa hayat: DNA rekombinan, cap jari DNA dan bioteknologi."}
 };
 var DUNIA_ASAS={warna:"#8A5A2B",lembut:"#F6EADC",gelap:"#5E3C1A",ikon:"\u{1F4DC}",hentian:[],misi:"Lepasi enam hentian untuk menguasai bab ini."};
 function duniaBab(id){ return DUNIA[id||BAB_ID]||DUNIA_ASAS; }
@@ -3916,7 +4000,7 @@ function kadNilai(){
   ["Cadangan TP setiap murid, cikgu yang tentukan TP akhir",
    "Grid diagnostik: soalan yang paling ramai murid gagal",
    "Ulasan PBD sedia untuk disalin ke SPPB",
-   "13 bab Biologi Tingkatan 4 dan 5 (Bab 1-2 setiap tingkatan percuma; Premium Biologi pada harga Early Bird RM23/tahun hingga 31 Dis 2026)",
+   "28 bab Biologi Tingkatan 4 dan 5 (Bab 1-2 setiap tingkatan percuma; Premium Biologi pada harga Early Bird RM23/tahun hingga 31 Dis 2026)",
    "Murid log masuk dengan kod kelas dan PIN, tidak perlu akaun murid"
   ].forEach(function(t){ ul.appendChild(el("li",null,esc(t))); });
   bd.appendChild(ul);
@@ -4571,7 +4655,7 @@ function pilihSubjekKeluarga(){
     n.appendChild(a);
   });
   w.appendChild(n);
-  w.appendChild(el("p","note","Satu akaun untuk kelima-lima subjek. Anak dan PIN yang sama digunakan dalam setiap subjek; tambah atau padam anak di mana-mana subjek sahaja."));
+  w.appendChild(el("p","note","Satu akaun untuk ketujuh-tujuh subjek. Anak dan PIN yang sama digunakan dalam setiap subjek; tambah atau padam anak di mana-mana subjek sahaja."));
   return w;
 }
 function paneKeluarga(ak){
