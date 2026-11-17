@@ -116,7 +116,7 @@ module.exports = {
    j1:jadual(1, "Jarak gerakan gelembung udara dalam potometer selama 5 minit",
      ["Keadaan", "Jarak (cm)"],
      [["Biasa","10"],["Berangin (kipas)","30"],["Lembap (beg plastik)","4"]]),
-   g1:{jenis:"graf", x:[0,4,8,12,16,20,24], xLabel:"Masa (jam)", titik:true, yMin:0, yMaks:10, grid:2,
+   g1:{jenis:"graf", x:[0,4,8,12,16,20,24], xLabel:"Masa (jam)", titik:true, yMin:0, yMaks:10, grid:5,
      siri:[{label:"Fotosintesis", y:[0,0,4,8,4,0,0], warna:"hijau"},{label:"Respirasi", y:[2,2,2,2,2,2,2], warna:"merah"}],
      kapsyen:"Rajah 2 · Kadar fotosintesis dan respirasi tumbuhan dalam sehari",
      alt:"Graf: fotosintesis sifar pada jam 0 dan 4, naik ke 4 pada jam 8, puncak 8 pada jam 12, turun ke 4 pada jam 16 dan sifar pada jam 20 dan 24; respirasi malar 2 unit"}

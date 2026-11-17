@@ -115,7 +115,7 @@ module.exports = {
    j1:jadual(1, "Pertumbuhan anak benih jagung dalam kultur larutan selepas 4 minggu",
      ["Larutan", "Pemerhatian", "Jisim kering (g)"],
      [["W (lengkap)","Subur, daun hijau","4.8"],["P","Terbantut, daun tua kuning","1.2"],["Q","Daun kuning antara urat","2.4"],["R","Akar pendek, pucuk mati","0.9"]]),
-   g1:{jenis:"graf", x:[0,5,10,15,20,25,30], xLabel:"Kepekatan oksigen (%)", titik:true, yMin:0, yMaks:80, grid:10,
+   g1:{jenis:"graf", x:[0,5,10,15,20,25,30], xLabel:"Kepekatan oksigen (%)", titik:true, yMin:0, yMaks:80, grid:8,
      siri:[{label:"Pengambilan ion K+ (unit)", y:[5,20,40,60,70,70,70], warna:"hijau"}],
      kapsyen:"Rajah 2 · Kadar pengambilan ion kalium oleh akar",
      alt:"Graf naik dari 5 unit pada 0% oksigen ke 20, 40, 60 dan 70 unit pada 20%, kemudian malar 70 unit hingga 30%"}

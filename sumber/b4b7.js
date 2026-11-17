@@ -55,7 +55,7 @@ const ARAS = [
  {j:"nombor",t:"Berdasarkan Rajah 1, senaman berhenti pada minit ke-20. Berapakah masa diambil untuk asid laktik kembali ke 1 mmol/L selepas senaman berhenti?",b:40,tol:0.5,suf:"min",u:"Dari minit 20 hingga minit 60 = 40 minit."},
  {j:"pilih",t:"Berdasarkan Rajah 1, mengapakah asid laktik meningkat dari minit 0 hingga 20?",p:["Fermentasi otot","Otot rehat sepenuhnya","Oksigen berlebihan","Hati hasilkan laktik"],b:0,u:"Bekalan oksigen tidak mencukupi semasa senaman cergas."},
  {j:"pilih",t:"Berdasarkan Rajah 1, mengapakah asid laktik menurun selepas minit ke-20?",p:["Ia dioksidakan","Ia disimpan di otot","Ia ditukar menjadi lemak","Ia keluar melalui peluh"],b:0,u:"Oksigen hutang digunakan untuk mengoksidakan asid laktik."},
- {j:"nombor",t:"Berdasarkan Rajah 1, hitung kadar purata penurunan asid laktik dari minit 20 hingga 40.",b:0.25,tol:0.01,suf:"mmol/L per min",u:"(10 − 5) ÷ 20 = 0.25 mmol/L per minit."},
+ {j:"nombor",t:"Berdasarkan Rajah 1, hitung kadar purata penurunan asid laktik dari minit 20 hingga 40.",b:0.2,tol:0.01,suf:"mmol/L per min",u:"(10 − 6) ÷ 20 = 0.2 mmol/L per minit."},
  {j:"pilih",t:"Berdasarkan Rajah 1, bagaimanakah graf berubah bagi atlet yang terlatih?",p:["Puncak lebih rendah","Puncak lebih tinggi","Tiada penurunan","Puncak pada minit 0"],b:0,u:"Otot terlatih menerima lebih banyak oksigen dan kurang bergantung pada fermentasi."},
  {j:"pilih",t:"Berdasarkan Rajah 1, pada minit ke-30 kadar pernafasan individu itu dijangka:",p:["Masih tinggi","Lebih rendah daripada biasa","Sifar","Sama seperti semasa tidur"],b:0,u:"Hutang oksigen masih dibayar."},
  {j:"pilih",t:"Data Rajah 1 diambil sekali sahaja daripada seorang murid. Kelemahan utama ialah:",p:["Kurang dipercayai","Graf terlalu kecil","Unit salah","Masa terlalu lama"],b:0,u:"Ulangan dan sampel lebih besar diperlukan untuk kebolehpercayaan."}],
@@ -112,9 +112,9 @@ module.exports = {
      ["Masa (min)", "Biji benih bercambah (cm)", "Biji benih direbus (cm)"],
      [["0","0.0","0.0"],["5","1.2","0.0"],["10","2.4","0.0"],["15","3.6","0.0"],["20","4.8","0.0"],["25","6.0","0.0"]]),
    g1:{jenis:"graf", x:[0,10,20,30,40,50,60], xLabel:"Masa (min)", titik:true, yMin:0, yMaks:12, grid:6,
-     siri:[{label:"Asid laktik darah (mmol/L)", y:[1,6,10,8,5,3,1], warna:"ungu"}],
+     siri:[{label:"Asid laktik darah (mmol/L)", y:[1,6,10,8,6,4,2], warna:"ungu"}],
      kapsyen:"Rajah 1 · Graf kepekatan asid laktik dalam darah; senaman cergas dari minit 0 hingga 20",
-     alt:"Graf naik dari 1 pada minit 0 ke puncak 10 pada minit 20, kemudian menurun ke 8, 5, 3 dan 1 pada minit 60"}
+     alt:"Graf naik dari 1 pada minit 0 ke puncak 10 pada minit 20, kemudian menurun ke 8, 6, 4 dan 2 pada minit 60"}
   },
   aras:ARAS
 };

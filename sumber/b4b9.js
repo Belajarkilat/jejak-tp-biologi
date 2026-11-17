@@ -116,7 +116,7 @@ module.exports = {
    j1:jadual(1, "Jisim dan tinggi empat individu dewasa",
      ["Individu", "Jisim (kg)", "Tinggi (m)"],
      [["A","45","1.50"],["B","80","1.60"],["C","40","1.60"],["D","70","1.75"]]),
-   g1:{jenis:"graf", x:[0,30,60,90,120,150], xLabel:"Masa selepas makan (min)", titik:true, yMin:0, yMaks:10, grid:5,
+   g1:{jenis:"graf", x:[0,30,60,90,120,150], xLabel:"Masa selepas makan (min)", titik:true, yMin:0, yMaks:10, grid:10,
      siri:[{label:"Glukosa darah (mmol/L)", y:[5,8,7,6,5.2,5], warna:"hijau"}],
      kapsyen:"Rajah 2 · Graf aras glukosa darah seorang individu sihat selepas makan",
      alt:"Graf naik dari 5 pada minit 0 ke puncak 8 pada minit 30, kemudian turun ke 7, 6, 5.2 dan 5 pada minit 150"}

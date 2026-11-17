@@ -116,7 +116,7 @@ module.exports = {
    j1:jadual(1, "Jarak pembaris jatuh sebelum ditangkap oleh murid X",
      ["Cubaan", "1", "2", "3", "4", "5"],
      [["Jarak (cm)","18","20","22","19","21"]]),
-   g1:{jenis:"graf", x:[2,4,6,8,10,12], xLabel:"Diameter akson bermielin (µm)", titik:true, yMin:0, yMaks:80, grid:8,
+   g1:{jenis:"graf", x:[2,4,6,8,10,12], xLabel:"Diameter akson bermielin (µm)", titik:true, yMin:0, yMaks:84, grid:7,
      siri:[{label:"Kelajuan impuls (m/s)", y:[12,24,36,48,60,72], warna:"ungu"}],
      kapsyen:"Rajah 2 · Graf kelajuan impuls melawan diameter akson bermielin",
      alt:"Graf garis lurus meningkat dari 12 m/s pada 2 µm kepada 72 m/s pada 12 µm"}

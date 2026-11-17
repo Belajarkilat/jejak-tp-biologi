@@ -112,7 +112,7 @@ module.exports = {
    j1:jadual(1, "Peratus biji benih kacang hijau bercambah selepas 3 hari pada suhu berbeza",
      ["Suhu air (°C)", "Ulangan 1 (%)", "Ulangan 2 (%)", "Ulangan 3 (%)"],
      [["10","18","22","20"],["20","48","52","50"],["30","78","82","80"],["40","52","48","50"]]),
-   g1:{jenis:"graf", x:[10,20,30,40,50], xLabel:"Suhu (°C)", titik:true, yMin:0, yMaks:100, grid:5,
+   g1:{jenis:"graf", x:[10,20,30,40,50], xLabel:"Suhu (°C)", titik:true, yMin:0, yMaks:100, grid:10,
      siri:[{label:"Purata percambahan (%)", y:[20,50,80,50,10], warna:"hijau"}],
      kapsyen:"Rajah 1 · Graf purata peratus percambahan biji benih melawan suhu",
      alt:"Graf naik dari 20 peratus pada 10 darjah ke puncak 80 peratus pada 30 darjah, kemudian turun ke 50 peratus pada 40 darjah dan 10 peratus pada 50 darjah"}

@@ -51,12 +51,12 @@ const ARAS = [
  kadNama:"Lengkung Sigmoid", kadEm:"\u{1F4C8}", kadFakta:"Pertumbuhan manusia berbentuk lengkung sigmoid dengan dua fasa pertumbuhan pesat: bayi dan akil baligh.",
  bosKadNama:"Pertumbuhan Tak Selanjar", bosKadEm:"\u{1F997}", bosKadFakta:"Serangga menunjukkan lengkung bertangga kerana hanya membesar selepas ekdisis.",
  soalan:[
- {j:"nombor",t:"Berdasarkan Rajah 2, berapakah tinggi pada umur 12 tahun?",b:145,tol:1,suf:"cm",u:"Graf menunjukkan 145 cm."},
- {j:"nombor",t:"Berdasarkan Rajah 2, hitung kadar pertumbuhan purata dari umur 12 hingga 16 tahun.",b:5,tol:0.1,suf:"cm/tahun",u:"(165 − 145) ÷ 4 = 5 cm setahun."},
- {j:"nombor",t:"Berdasarkan Rajah 2, hitung kadar pertumbuhan purata dari umur 16 hingga 20 tahun.",b:1.25,tol:0.01,suf:"cm/tahun",u:"(170 − 165) ÷ 4 = 1.25 cm setahun."},
- {j:"pilih",t:"Berdasarkan Rajah 2, fasa pertumbuhan pesat pertama berlaku pada:",p:["Umur 0 hingga 4","Umur 8 hingga 12","Umur 16 hingga 20","Selepas 20"],b:0,u:"Bayi membesar dengan sangat cepat: 50 cm dalam 4 tahun."},
+ {j:"nombor",t:"Berdasarkan Rajah 2, berapakah tinggi pada umur 12 tahun?",b:140,tol:1,suf:"cm",u:"Graf menunjukkan 140 cm."},
+ {j:"nombor",t:"Berdasarkan Rajah 2, hitung kadar pertumbuhan purata dari umur 12 hingga 16 tahun.",b:10,tol:0.1,suf:"cm/tahun",u:"(180 − 140) ÷ 4 = 10 cm setahun."},
+ {j:"nombor",t:"Berdasarkan Rajah 2, hitung kadar pertumbuhan purata dari umur 16 hingga 20 tahun.",b:0,tol:0.05,suf:"cm/tahun",u:"(180 − 180) ÷ 4 = 0 cm setahun; ketinggian telah mencapai maksimum."},
+ {j:"pilih",t:"Berdasarkan Rajah 2, fasa pertumbuhan pesat pertama berlaku pada:",p:["Umur 0 hingga 4","Umur 8 hingga 12","Umur 16 hingga 20","Selepas 20"],b:0,u:"Bayi membesar dengan sangat cepat: 40 cm dalam 4 tahun."},
  {j:"pilih",t:"Berdasarkan Rajah 2, mengapakah pertumbuhan pesat berlaku antara umur 12 dan 16?",p:["Akil baligh","Menopaus","Penuaan","Kekurangan makanan"],b:0,u:"Hormon pertumbuhan dan hormon seks meningkat."},
- {j:"pilih",t:"Berdasarkan Rajah 2, mengapakah graf hampir mendatar selepas umur 20?",p:["Tulang berhenti tumbuh","Kekurangan makanan","Otot mula menyusut","Tulang mula memendek"],b:0,u:"Plat epifisis tulang telah tertutup."},
+ {j:"pilih",t:"Berdasarkan Rajah 2, mengapakah graf mendatar antara umur 16 dan 20?",p:["Tulang berhenti tumbuh","Kekurangan makanan","Otot mula menyusut","Tulang mula memendek"],b:0,u:"Plat epifisis tulang telah tertutup."},
  {j:"pilih",t:"Lengkung pertumbuhan serangga berbeza daripada Rajah 2 kerana berbentuk:",p:["Bertangga","Sigmoid","Garis lurus","Bulatan"],b:0,u:"Saiz bertambah hanya selepas setiap kali bersalin kulit."},
  {j:"pilih",t:"Parameter manakah PALING sesuai untuk mengukur pertumbuhan bayi di klinik?",p:["Berat dan panjang","Warna kulit","Bilangan gigi sahaja","Suara"],b:0,u:"Carta berat dan panjang memantau pertumbuhan normal."}],
  bos:{j:"pilih",t:"Berdasarkan Rajah 2, seorang murid berumur 14 tahun mempunyai tinggi jauh di bawah lengkung normal. Tindakan PALING wajar:",p:["Rujuk doktor","Abaikan","Paksa makan berlebihan","Ambil ubat tanpa preskripsi"],b:0,u:"Doktor dapat menilai pemakanan atau gangguan hormon pertumbuhan."}},
@@ -115,10 +115,10 @@ module.exports = {
    j1:jadual(1, "Ketebalan endometrium sepanjang kitar haid 28 hari",
      ["Hari", "1", "5", "10", "14", "21", "28"],
      [["Ketebalan (mm)","4","2","6","9","11","4"]]),
-   g1:{jenis:"graf", x:[0,4,8,12,16,20], xLabel:"Umur (tahun)", titik:true, yMin:0, yMaks:180, grid:6,
-     siri:[{label:"Tinggi (cm)", y:[50,100,125,145,165,170], warna:"hijau"}],
+   g1:{jenis:"graf", x:[0,4,8,12,16,20], xLabel:"Umur (tahun)", titik:true, yMin:40, yMaks:200, grid:8,
+     siri:[{label:"Tinggi (cm)", y:[60,100,120,140,180,180], warna:"hijau"}],
      kapsyen:"Rajah 2 · Graf tinggi seorang lelaki dari lahir hingga umur 20 tahun",
-     alt:"Graf naik pesat dari 50 cm pada lahir ke 100 cm pada umur 4, kemudian 125, 145, 165 dan 170 cm pada umur 20"}
+     alt:"Graf naik pesat dari 60 cm pada lahir ke 100 cm pada umur 4, kemudian 120 dan 140 cm pada umur 12, naik pesat ke 180 cm pada umur 16 dan kekal 180 cm pada umur 20"}
   },
   aras:ARAS
 };

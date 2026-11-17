@@ -53,10 +53,10 @@ const ARAS = [
  soalan:[
  {j:"nombor",t:"Berdasarkan Rajah 2, berapakah jisim kering maksimum?",b:22,tol:0.2,suf:"g",u:"Puncak 22 g pada minggu ke-10."},
  {j:"pilih",t:"Berdasarkan Rajah 2, mengapakah jisim kering menurun pada minggu 0 hingga 2?",p:["Simpanan makanan digunakan","Fotosintesis berlaku dengan pesat","Biji benih menyerap banyak air","Daun baharu bertambah dengan cepat"],b:0,u:"Respirasi menggunakan simpanan makanan sebelum daun berfotosintesis."},
- {j:"nombor",t:"Berdasarkan Rajah 2, hitung kadar pertambahan jisim kering dari minggu 4 hingga 8.",b:4,tol:0.05,suf:"g/minggu",u:"(20 − 4) ÷ 4 = 4 g seminggu."},
+ {j:"nombor",t:"Berdasarkan Rajah 2, hitung kadar pertambahan jisim kering dari minggu 4 hingga 8.",b:3.5,tol:0.05,suf:"g/minggu",u:"(20 − 6) ÷ 4 = 3.5 g seminggu."},
  {j:"pilih",t:"Berdasarkan Rajah 2, mengapakah jisim kering meningkat pesat dari minggu 4 hingga 8?",p:["Fotosintesis melebihi respirasi","Respirasi melebihi fotosintesis","Biji gugur dari pokok induk","Air menyejat melalui stoma"],b:0,u:"Daun yang banyak menghasilkan glukosa."},
  {j:"pilih",t:"Berdasarkan Rajah 2, mengapakah jisim kering menurun selepas minggu ke-10?",p:["Biji dan daun gugur","Fotosintesis bertambah","Akar terus memanjang","Air semakin bertambah"],b:0,u:"Tumbuhan semusim menua selepas menghasilkan biji."},
- {j:"nombor",t:"Berdasarkan Rajah 2, berapakah penurunan jisim kering dari minggu 10 hingga 12?",b:7,tol:0.2,suf:"g",u:"22 − 15 = 7 g."},
+ {j:"nombor",t:"Berdasarkan Rajah 2, berapakah penurunan jisim kering dari minggu 10 hingga 12?",b:6,tol:0.2,suf:"g",u:"22 − 16 = 6 g."},
  {j:"pilih",t:"Berdasarkan Rajah 2, bentuk keseluruhan lengkung pertumbuhan ini ialah:",p:["Sigmoid","Bertangga","Garis lurus","Bulatan"],b:0,u:"Lengkung berbentuk S dengan fasa perlahan, pesat dan mendatar."},
  {j:"pilih",t:"Lengkung pertumbuhan pokok getah selama 20 tahun dijangka:",p:["Meningkat bertahun-tahun","Menurun selepas 12 minggu","Sama dengan Rajah 2","Garis mendatar"],b:0,u:"Pokok saka terus bertambah jisim melalui pertumbuhan sekunder."}],
  bos:{j:"pilih",t:"Berdasarkan Rajah 2, bilakah masa PALING sesuai untuk menuai tanaman semusim untuk biji?",p:["Minggu ke-10","Minggu ke-2","Minggu ke-4","Selepas minggu ke-14"],b:0,u:"Jisim kering maksimum menunjukkan biji telah matang sepenuhnya."}},
@@ -115,10 +115,10 @@ module.exports = {
    j1:jadual(1, "Tinggi anak benih kacang hijau",
      ["Hari", "0", "2", "4", "6", "8", "10", "12"],
      [["Tinggi (cm)","0","1","3","7","12","15","16"]]),
-   g1:{jenis:"graf", x:[0,2,4,6,8,10,12], xLabel:"Masa (minggu)", titik:true, yMin:0, yMaks:25, grid:5,
-     siri:[{label:"Jisim kering (g)", y:[2,1.5,4,12,20,22,15], warna:"hijau"}],
+   g1:{jenis:"graf", x:[0,2,4,6,8,10,12], xLabel:"Masa (minggu)", titik:true, yMin:0, yMaks:24, grid:12,
+     siri:[{label:"Jisim kering (g)", y:[4,2,6,12,20,22,16], warna:"hijau"}],
      kapsyen:"Rajah 2 · Graf jisim kering tumbuhan semusim",
-     alt:"Graf turun dari 2 ke 1.5 g pada minggu 2, naik ke 4, 12, 20 dan puncak 22 g pada minggu 10, kemudian turun ke 15 g pada minggu 12"}
+     alt:"Graf turun dari 4 ke 2 g pada minggu 2, naik ke 6, 12, 20 dan puncak 22 g pada minggu 10, kemudian turun ke 16 g pada minggu 12"}
   },
   aras:ARAS
 };

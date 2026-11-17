@@ -52,8 +52,8 @@ const ARAS = [
  bosKadNama:"Tahap Kecergasan", bosKadEm:"\u{1F3C5}", bosKadFakta:"Individu cergas kembali ke kadar pernafasan rehat dengan lebih cepat.",
  soalan:[
  {j:"nombor",t:"Berdasarkan Rajah 2, berapakah kadar pernafasan semasa rehat?",b:15,tol:0.5,suf:"nafas/min",u:"Minit 0 dan minit 2 menunjukkan 15 nafas/min."},
- {j:"nombor",t:"Berdasarkan Rajah 2, berapakah kadar pernafasan maksimum?",b:32,tol:0.5,suf:"nafas/min",u:"Puncak pada minit ke-4 ialah 32 nafas/min."},
- {j:"nombor",t:"Berdasarkan Rajah 2, hitung peningkatan kadar pernafasan dari rehat hingga maksimum.",b:17,tol:0.5,suf:"nafas/min",u:"32 − 15 = 17 nafas/min."},
+ {j:"nombor",t:"Berdasarkan Rajah 2, berapakah kadar pernafasan maksimum?",b:30,tol:0.5,suf:"nafas/min",u:"Puncak pada minit ke-4 ialah 30 nafas/min."},
+ {j:"nombor",t:"Berdasarkan Rajah 2, hitung peningkatan kadar pernafasan dari rehat hingga maksimum.",b:15,tol:0.5,suf:"nafas/min",u:"30 − 15 = 15 nafas/min."},
  {j:"pilih",t:"Berdasarkan Rajah 2, mengapakah kadar pernafasan meningkat dari minit 2 hingga 4?",p:["Keperluan O₂ meningkat","Otot berehat","Kandungan CO₂ menurun","Diafragma lumpuh"],b:0,u:"Otot memerlukan lebih banyak tenaga semasa bersenam."},
  {j:"pilih",t:"Berdasarkan Rajah 2, kadar pernafasan masih tinggi pada minit ke-6 kerana:",p:["Hutang oksigen","Senaman bermula semula","Suhu bilik rendah","Peparu rosak"],b:0,u:"Oksigen tambahan diperlukan untuk mengoksidakan asid laktik."},
  {j:"nombor",t:"Berdasarkan Rajah 2, berapa minit diambil untuk kadar kembali ke 15 nafas/min selepas puncak?",b:6,tol:0.2,suf:"min",u:"Dari minit 4 hingga minit 10 = 6 minit."},
@@ -116,9 +116,9 @@ module.exports = {
      ["Gas", "Udara sedutan (%)", "Udara hembusan (%)"],
      [["Oksigen","21","16"],["Karbon dioksida","0.04","4"],["Nitrogen","78","78"],["Wap air","Berubah-ubah","Tepu"]]),
    g1:{jenis:"graf", x:[0,2,4,6,8,10], xLabel:"Masa (min)", titik:true, yMin:0, yMaks:35, grid:7,
-     siri:[{label:"Kadar pernafasan (nafas/min)", y:[15,15,32,26,20,15], warna:"ungu"}],
+     siri:[{label:"Kadar pernafasan (nafas/min)", y:[15,15,30,25,20,15], warna:"ungu"}],
      kapsyen:"Rajah 2 · Graf kadar pernafasan seorang murid; berlari dari minit 2 hingga 4",
-     alt:"Graf mendatar 15 dari minit 0 hingga 2, naik ke 32 pada minit 4, kemudian turun ke 26, 20 dan 15 pada minit 10"}
+     alt:"Graf mendatar 15 dari minit 0 hingga 2, naik ke 30 pada minit 4, kemudian turun ke 25, 20 dan 15 pada minit 10"}
   },
   aras:ARAS
 };

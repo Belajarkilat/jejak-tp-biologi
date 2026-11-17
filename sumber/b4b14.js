@@ -52,7 +52,7 @@ const ARAS = [
  bosKadNama:"Simpanan Tulang", bosKadEm:"\u{1F95B}", bosKadFakta:"Jisim tulang puncak dibina semasa remaja dan awal dewasa melalui kalsium, vitamin D dan senaman.",
  soalan:[
  {j:"nombor",t:"Berdasarkan Rajah 2, berapakah ketumpatan mineral tulang pada umur 50 tahun?",b:1,tol:0.01,suf:"g/cm²",u:"Graf menunjukkan 1.00 g/cm²."},
- {j:"nombor",t:"Berdasarkan Rajah 2, hitung peratus penurunan ketumpatan tulang dari umur 30 hingga 70 tahun. Beri jawapan kepada 1 tempat perpuluhan.",b:32.2,tol:0.1,suf:"%",u:"(1.18 − 0.80) ÷ 1.18 × 100% = 32.2%."},
+ {j:"nombor",t:"Berdasarkan Rajah 2, hitung peratus penurunan ketumpatan tulang dari umur 30 hingga 70 tahun. Beri jawapan kepada 1 tempat perpuluhan.",b:33.3,tol:0.1,suf:"%",u:"(1.20 − 0.80) ÷ 1.20 × 100% = 33.3%."},
  {j:"pilih",t:"Berdasarkan Rajah 2, pada umur berapakah ketumpatan tulang paling tinggi?",p:["20 tahun","50 tahun","60 tahun","70 tahun"],b:0,u:"Jisim tulang puncak dicapai pada awal dewasa."},
  {j:"pilih",t:"Berdasarkan Rajah 2, mengapakah ketumpatan tulang wanita menurun dengan cepat selepas menopaus?",p:["Estrogen berkurang","Estrogen bertambah","Tulang memanjang","Otot bertambah"],b:0,u:"Estrogen membantu mengekalkan ketumpatan tulang."},
  {j:"nombor",t:"Berdasarkan Rajah 2, hitung kadar purata penurunan ketumpatan dari umur 50 hingga 70 tahun.",b:0.01,tol:0.001,suf:"g/cm² setahun",u:"(1.00 − 0.80) ÷ 20 = 0.01 g/cm² setahun."},
@@ -115,10 +115,10 @@ module.exports = {
    j1:jadual(1, "Bilangan picitan penyepit kain setiap minit oleh seorang murid",
      ["Minit", "1", "2", "3", "4", "5"],
      [["Bilangan picitan","60","52","45","38","30"]]),
-   g1:{jenis:"graf", x:[20,30,40,50,60,70], xLabel:"Umur (tahun)", titik:true, yMin:0, yMaks:1.4, grid:7,
-     siri:[{label:"Ketumpatan mineral tulang (g/cm²)", y:[1.20,1.18,1.10,1.00,0.90,0.80], warna:"ungu"}],
+   g1:{jenis:"graf", x:[20,30,40,50,60,70], xLabel:"Umur (tahun)", titik:true, yMin:0.6, yMaks:1.3, grid:7,
+     siri:[{label:"Ketumpatan mineral tulang (g/cm²)", y:[1.20,1.20,1.10,1.00,0.90,0.80], warna:"ungu"}],
      kapsyen:"Rajah 2 · Graf purata ketumpatan mineral tulang wanita mengikut umur",
-     alt:"Graf menurun dari 1.20 pada umur 20 ke 1.18 pada 30, 1.10 pada 40, 1.00 pada 50, 0.90 pada 60 dan 0.80 pada 70"}
+     alt:"Graf menurun dari 1.20 pada umur 20 ke 1.20 pada 30, 1.10 pada 40, 1.00 pada 50, 0.90 pada 60 dan 0.80 pada 70"}
   },
   aras:ARAS
 };

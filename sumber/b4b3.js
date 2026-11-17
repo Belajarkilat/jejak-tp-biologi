@@ -51,7 +51,7 @@ const ARAS = [
  kadNama:"Titik Isotonik", kadEm:"\u{1F4C9}", kadFakta:"Kepekatan sap sel dianggar dari titik graf memotong garis 0% perubahan jisim.",
  bosKadNama:"Tisu Berbeza", bosKadEm:"\u{1F955}", bosKadFakta:"Tisu berbeza mempunyai kepekatan sap sel berbeza, jadi titik isotoniknya juga berbeza.",
  soalan:[
- {j:"nombor",t:"Berdasarkan Rajah 1, anggarkan kepekatan sukrosa yang isotonik dengan sap sel kentang. Beri jawapan kepada 2 tempat perpuluhan.",b:0.47,tol:0.03,suf:"M",u:"Graf memotong 0% antara 0.4 M (+2%) dan 0.6 M (−4%), kira-kira 0.47 M."},
+ {j:"nombor",t:"Berdasarkan Rajah 1, anggarkan kepekatan sukrosa yang isotonik dengan sap sel kentang. Beri jawapan kepada 2 tempat perpuluhan.",b:0.5,tol:0.03,suf:"M",u:"Graf memotong 0% di tengah-tengah antara 0.4 M (+4%) dan 0.6 M (−4%), iaitu 0.50 M."},
  {j:"nombor",t:"Berdasarkan Rajah 1, berapakah peratus perubahan jisim pada 0.6 M?",b:-4,tol:0.2,suf:"%",u:"Graf menunjukkan −4% pada 0.6 M."},
  {j:"pilih",t:"Berdasarkan Rajah 1, apakah hubungan antara kepekatan sukrosa dan peratus perubahan jisim?",p:["Kepekatan naik, jisim turun","Kepekatan naik, jisim naik","Tiada sebarang hubungan","Jisim kekal tidak berubah"],b:0,u:"Semakin pekat larutan, semakin banyak air keluar dari sel."},
  {j:"pilih",t:"Berdasarkan Rajah 1, larutan manakah menyebabkan deplasmolisis jika jalur yang telah plasmolisis direndam semula?",p:["0.0 M","0.8 M","1.0 M","0.6 M"],b:0,u:"Larutan hipotonik membolehkan air masuk semula."},
@@ -111,10 +111,10 @@ module.exports = {
    j1:jadual(1, "Jisim jalur kentang sebelum dan selepas direndam 30 minit dalam larutan sukrosa",
      ["Kepekatan sukrosa (M)", "Jisim awal (g)", "Jisim akhir (g)"],
      [["0.0","5.00","5.75"],["0.2","5.00","5.40"],["0.4","5.00","5.10"],["0.6","5.00","4.80"],["0.8","5.00","4.50"],["1.0","5.00","4.25"]]),
-   g1:{jenis:"graf", x:[0,0.2,0.4,0.6,0.8,1.0], xLabel:"Kepekatan sukrosa (M)", titik:true, yMin:-20, yMaks:20, grid:8,
-     siri:[{label:"Perubahan jisim (%)", y:[15,8,2,-4,-10,-15], warna:"hijau"}],
+   g1:{jenis:"graf", x:[0,0.2,0.4,0.6,0.8,1.0], xLabel:"Kepekatan sukrosa (M)", titik:true, yMin:-20, yMaks:20, grid:10,
+     siri:[{label:"Perubahan jisim (%)", y:[16,8,4,-4,-12,-16], warna:"hijau"}],
      kapsyen:"Rajah 1 · Graf peratus perubahan jisim jalur kentang melawan kepekatan sukrosa",
-     alt:"Graf menurun dari tambah 15 peratus pada 0 M kepada tolak 15 peratus pada 1.0 M, memotong sifar antara 0.4 dan 0.6 M"}
+     alt:"Graf menurun dari tambah 16 peratus pada 0 M, 8 pada 0.2, 4 pada 0.4, tolak 4 pada 0.6, tolak 12 pada 0.8 dan tolak 16 peratus pada 1.0 M"}
   },
   aras:ARAS
 };

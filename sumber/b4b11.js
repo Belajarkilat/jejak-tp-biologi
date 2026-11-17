@@ -111,10 +111,10 @@ module.exports = {
    j1:jadual(1, "Nilai R₀ bagi tiga penyakit berjangkit",
      ["Penyakit", "Cara merebak", "R₀"],
      [["Campak","Udara","15"],["Polio","Najis-mulut","6"],["Influenza","Titisan","2"]]),
-   g1:{jenis:"graf", x:[0,10,20,30,40,50,60], xLabel:"Masa (hari)", titik:true, yMin:0, yMaks:25, grid:5,
-     siri:[{label:"Aras antibodi (unit)", y:[0,4,2,1,20,15,12], warna:"ungu"},{label:"Aras keimunan", y:[5,5,5,5,5,5,5], warna:"hijau"}],
+   g1:{jenis:"graf", x:[0,10,20,30,40,50,60], xLabel:"Masa (hari)", titik:true, yMin:0, yMaks:24, grid:6,
+     siri:[{label:"Aras antibodi (unit)", y:[0,4,2,1,20,16,12], warna:"ungu"},{label:"Aras keimunan", y:[5,5,5,5,5,5,5], warna:"hijau"}],
      kapsyen:"Rajah 1 · Graf aras antibodi; suntikan pertama pada hari 0 dan dos penggalak pada hari 30",
-     alt:"Graf antibodi naik ke 4 pada hari 10, turun ke 1 pada hari 30, naik mendadak ke 20 pada hari 40, kemudian 15 dan 12; garis aras keimunan mendatar pada 5"}
+     alt:"Graf antibodi naik ke 4 pada hari 10, turun ke 1 pada hari 30, naik mendadak ke 20 pada hari 40, kemudian 16 dan 12; garis aras keimunan mendatar pada 5"}
   },
   aras:ARAS
 };

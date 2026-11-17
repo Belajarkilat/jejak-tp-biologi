@@ -52,7 +52,7 @@ const ARAS = [
  bosKadNama:"Kitar Harian", bosKadEm:"\u{1F31E}", bosKadFakta:"Kadar transpirasi biasanya paling tinggi pada tengah hari apabila cahaya dan suhu maksimum.",
  soalan:[
  {j:"nombor",t:"Berdasarkan Rajah 2, berapakah kadar transpirasi pada kelembapan relatif 40%?",b:6,tol:0.1,suf:"g/jam",u:"Bacaan graf ialah 6 g sejam."},
- {j:"nombor",t:"Berdasarkan Rajah 2, berapakah penurunan kadar transpirasi dari kelembapan 20% hingga 80%?",b:8,tol:0.1,suf:"g/jam",u:"9 − 1 = 8 g sejam."},
+ {j:"nombor",t:"Berdasarkan Rajah 2, berapakah penurunan kadar transpirasi dari kelembapan 20% hingga 80%?",b:8,tol:0.1,suf:"g/jam",u:"10 − 2 = 8 g sejam."},
  {j:"pilih",t:"Berdasarkan Rajah 2, hubungan kelembapan relatif dengan kadar transpirasi ialah:",p:["Berkadar songsang","Berkadar terus","Tiada hubungan","Malar"],b:0,u:"Semakin lembap udara, semakin rendah kadar transpirasi."},
  {j:"pilih",t:"Berdasarkan Rajah 2, mengapakah transpirasi rendah pada kelembapan 80%?",p:["Udara hampir tepu","Stoma terbuka luas","Suhu tinggi","Angin kencang"],b:0,u:"Kecerunan kepekatan wap air antara daun dan udara sangat kecil."},
  {j:"nombor",t:"Berdasarkan Rajah 2, berapakah jumlah air hilang dalam 5 jam pada kelembapan 60%?",b:20,tol:0.2,suf:"g",u:"4 g/jam × 5 jam = 20 g."},
@@ -115,10 +115,10 @@ module.exports = {
    j1:jadual(1, "Diameter batang pokok bunga raya selepas gelangan",
      ["Minggu", "Di atas gelang (cm)", "Di bawah gelang (cm)", "Keadaan daun"],
      [["0","2.0","2.0","Segar"],["2","2.3","2.0","Segar"],["4","2.6","2.0","Segar"]]),
-   g1:{jenis:"graf", x:[20,40,60,80], xLabel:"Kelembapan relatif (%)", titik:true, yMin:0, yMaks:10, grid:2,
-     siri:[{label:"Kadar transpirasi (g/jam)", y:[9,6,4,1], warna:"hijau"}],
+   g1:{jenis:"graf", x:[20,40,60,80], xLabel:"Kelembapan relatif (%)", titik:true, yMin:0, yMaks:10, grid:5,
+     siri:[{label:"Kadar transpirasi (g/jam)", y:[10,6,4,2], warna:"hijau"}],
      kapsyen:"Rajah 2 · Kesan kelembapan relatif terhadap kadar transpirasi",
-     alt:"Graf menurun: 9 g sejam pada 20%, 6 pada 40%, 4 pada 60% dan 1 pada 80% kelembapan relatif"}
+     alt:"Graf menurun: 10 g sejam pada 20%, 6 pada 40%, 4 pada 60% dan 2 pada 80% kelembapan relatif"}
   },
   aras:ARAS
 };
