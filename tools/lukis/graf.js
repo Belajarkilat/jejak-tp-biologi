@@ -34,7 +34,7 @@ function garisan(spec){
      seperti isi padu (L) dan tekanan (kPa) terpaksa dipaksa pada satu skala,
      yang menjadikan graf itu salah walaupun bentuknya betul. */
   const duaPaksi = !!spec.yKanan;
-  const kiri = 40, kanan = LEBAR - (duaPaksi ? 42 : 12);
+  const kiri = 40, kanan = LEBAR - Math.max(duaPaksi ? 42 : 12, A.lebarTeks(String(x[x.length - 1]), 11.5) / 2 + 3);
   const atas = 16;
   const adaPetunjuk = siri.length > 1 || !!spec.petunjuk;
   const bawah = 150;
